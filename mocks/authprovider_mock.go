@@ -5,35 +5,36 @@
 package mocks
 
 import (
-	gomock "github.com/golang/mock/gomock"
 	reflect "reflect"
 	time "time"
+
+	gomock "github.com/golang/mock/gomock"
 )
 
-// MockAuthProvider is a mock of AuthProvider interface
+// MockAuthProvider is a mock of AuthProvider interface.
 type MockAuthProvider struct {
 	ctrl     *gomock.Controller
 	recorder *MockAuthProviderMockRecorder
 }
 
-// MockAuthProviderMockRecorder is the mock recorder for MockAuthProvider
+// MockAuthProviderMockRecorder is the mock recorder for MockAuthProvider.
 type MockAuthProviderMockRecorder struct {
 	mock *MockAuthProvider
 }
 
-// NewMockAuthProvider creates a new mock instance
+// NewMockAuthProvider creates a new mock instance.
 func NewMockAuthProvider(ctrl *gomock.Controller) *MockAuthProvider {
 	mock := &MockAuthProvider{ctrl: ctrl}
 	mock.recorder = &MockAuthProviderMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use
+// EXPECT returns an object that allows the caller to indicate expected use.
 func (m *MockAuthProvider) EXPECT() *MockAuthProviderMockRecorder {
 	return m.recorder
 }
 
-// Token mocks base method
+// Token mocks base method.
 func (m *MockAuthProvider) Token() (string, time.Duration, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Token")
@@ -43,7 +44,7 @@ func (m *MockAuthProvider) Token() (string, time.Duration, error) {
 	return ret0, ret1, ret2
 }
 
-// Token indicates an expected call of Token
+// Token indicates an expected call of Token.
 func (mr *MockAuthProviderMockRecorder) Token() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Token", reflect.TypeOf((*MockAuthProvider)(nil).Token))

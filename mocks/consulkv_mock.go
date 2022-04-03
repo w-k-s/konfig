@@ -11,30 +11,30 @@ import (
 	api "github.com/hashicorp/consul/api"
 )
 
-// MockConsulKV is a mock of ConsulKV interface
+// MockConsulKV is a mock of ConsulKV interface.
 type MockConsulKV struct {
 	ctrl     *gomock.Controller
 	recorder *MockConsulKVMockRecorder
 }
 
-// MockConsulKVMockRecorder is the mock recorder for MockConsulKV
+// MockConsulKVMockRecorder is the mock recorder for MockConsulKV.
 type MockConsulKVMockRecorder struct {
 	mock *MockConsulKV
 }
 
-// NewMockConsulKV creates a new mock instance
+// NewMockConsulKV creates a new mock instance.
 func NewMockConsulKV(ctrl *gomock.Controller) *MockConsulKV {
 	mock := &MockConsulKV{ctrl: ctrl}
 	mock.recorder = &MockConsulKVMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use
+// EXPECT returns an object that allows the caller to indicate expected use.
 func (m *MockConsulKV) EXPECT() *MockConsulKVMockRecorder {
 	return m.recorder
 }
 
-// Get mocks base method
+// Get mocks base method.
 func (m *MockConsulKV) Get(key string, q *api.QueryOptions) (*api.KVPair, *api.QueryMeta, error) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Get", key, q)
@@ -44,7 +44,7 @@ func (m *MockConsulKV) Get(key string, q *api.QueryOptions) (*api.KVPair, *api.Q
 	return ret0, ret1, ret2
 }
 
-// Get indicates an expected call of Get
+// Get indicates an expected call of Get.
 func (mr *MockConsulKVMockRecorder) Get(key, q interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Get", reflect.TypeOf((*MockConsulKV)(nil).Get), key, q)

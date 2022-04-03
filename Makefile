@@ -29,5 +29,7 @@ mocks:
 	mockgen -package mocks github.com/lalamove/nui/ncontext Contexter > ./mocks/contexter_mock.go
 	mockgen -source ./parser/parser.go -package mocks Parser > ./mocks/parser_mock.go
 	mockgen -source ./loader/klconsul/consulloader.go -package mocks ConsulKV > ./mocks/consulkv_mock.go
+	mockgen -source ./loader/kls3/s3loader.go -package mocks Downloader > ./mocks/s3downloader_mock.go	
+
 
 .PHONY: test test-race coverage coverage-html lint benchmarks mocks

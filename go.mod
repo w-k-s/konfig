@@ -3,6 +3,7 @@ module github.com/lalamove/konfig
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/armon/go-metrics v0.3.1 // indirect
+	github.com/aws/aws-sdk-go v1.43.31
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/coreos/bbolt v1.3.2 // indirect
 	github.com/coreos/etcd v3.3.10+incompatible
@@ -33,7 +34,7 @@ require (
 	github.com/mitchellh/go-testing-interface v1.0.3 // indirect
 	github.com/mitchellh/mapstructure v1.2.3 // indirect
 	github.com/pierrec/lz4 v2.2.6+incompatible // indirect
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.4.0
 	github.com/radovskyb/watcher v1.0.5
 	github.com/soheilhy/cmux v0.1.4 // indirect
@@ -49,7 +50,6 @@ require (
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0 // indirect
 	golang.org/x/crypto v0.0.0-20200117160349-530e935923ad // indirect
-	golang.org/x/net v0.0.0-20200226121028-0de0cce0169b // indirect
 	google.golang.org/grpc v1.23.1 // indirect
 	gopkg.in/square/go-jose.v2 v2.4.1 // indirect
 	gopkg.in/yaml.v2 v2.2.8

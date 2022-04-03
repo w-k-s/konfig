@@ -6,35 +6,36 @@ package mocks
 
 import (
 	context "context"
-	gomock "github.com/golang/mock/gomock"
 	reflect "reflect"
 	time "time"
+
+	gomock "github.com/golang/mock/gomock"
 )
 
-// MockContexter is a mock of Contexter interface
+// MockContexter is a mock of Contexter interface.
 type MockContexter struct {
 	ctrl     *gomock.Controller
 	recorder *MockContexterMockRecorder
 }
 
-// MockContexterMockRecorder is the mock recorder for MockContexter
+// MockContexterMockRecorder is the mock recorder for MockContexter.
 type MockContexterMockRecorder struct {
 	mock *MockContexter
 }
 
-// NewMockContexter creates a new mock instance
+// NewMockContexter creates a new mock instance.
 func NewMockContexter(ctrl *gomock.Controller) *MockContexter {
 	mock := &MockContexter{ctrl: ctrl}
 	mock.recorder = &MockContexterMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use
+// EXPECT returns an object that allows the caller to indicate expected use.
 func (m *MockContexter) EXPECT() *MockContexterMockRecorder {
 	return m.recorder
 }
 
-// WithCancel mocks base method
+// WithCancel mocks base method.
 func (m *MockContexter) WithCancel(arg0 context.Context) (context.Context, context.CancelFunc) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WithCancel", arg0)
@@ -43,13 +44,13 @@ func (m *MockContexter) WithCancel(arg0 context.Context) (context.Context, conte
 	return ret0, ret1
 }
 
-// WithCancel indicates an expected call of WithCancel
+// WithCancel indicates an expected call of WithCancel.
 func (mr *MockContexterMockRecorder) WithCancel(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithCancel", reflect.TypeOf((*MockContexter)(nil).WithCancel), arg0)
 }
 
-// WithDeadline mocks base method
+// WithDeadline mocks base method.
 func (m *MockContexter) WithDeadline(arg0 context.Context, arg1 time.Time) (context.Context, context.CancelFunc) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WithDeadline", arg0, arg1)
@@ -58,13 +59,13 @@ func (m *MockContexter) WithDeadline(arg0 context.Context, arg1 time.Time) (cont
 	return ret0, ret1
 }
 
-// WithDeadline indicates an expected call of WithDeadline
+// WithDeadline indicates an expected call of WithDeadline.
 func (mr *MockContexterMockRecorder) WithDeadline(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithDeadline", reflect.TypeOf((*MockContexter)(nil).WithDeadline), arg0, arg1)
 }
 
-// WithTimeout mocks base method
+// WithTimeout mocks base method.
 func (m *MockContexter) WithTimeout(arg0 context.Context, arg1 time.Duration) (context.Context, context.CancelFunc) {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "WithTimeout", arg0, arg1)
@@ -73,7 +74,7 @@ func (m *MockContexter) WithTimeout(arg0 context.Context, arg1 time.Duration) (c
 	return ret0, ret1
 }
 
-// WithTimeout indicates an expected call of WithTimeout
+// WithTimeout indicates an expected call of WithTimeout.
 func (mr *MockContexterMockRecorder) WithTimeout(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "WithTimeout", reflect.TypeOf((*MockContexter)(nil).WithTimeout), arg0, arg1)

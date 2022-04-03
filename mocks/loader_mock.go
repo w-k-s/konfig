@@ -5,64 +5,37 @@
 package mocks
 
 import (
-	gomock "github.com/golang/mock/gomock"
-	konfig "github.com/lalamove/konfig"
 	reflect "reflect"
 	time "time"
+
+	gomock "github.com/golang/mock/gomock"
+	konfig "github.com/lalamove/konfig"
 )
 
-// MockLoader is a mock of Loader interface
+// MockLoader is a mock of Loader interface.
 type MockLoader struct {
 	ctrl     *gomock.Controller
 	recorder *MockLoaderMockRecorder
 }
 
-// MockLoaderMockRecorder is the mock recorder for MockLoader
+// MockLoaderMockRecorder is the mock recorder for MockLoader.
 type MockLoaderMockRecorder struct {
 	mock *MockLoader
 }
 
-// NewMockLoader creates a new mock instance
+// NewMockLoader creates a new mock instance.
 func NewMockLoader(ctrl *gomock.Controller) *MockLoader {
 	mock := &MockLoader{ctrl: ctrl}
 	mock.recorder = &MockLoaderMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use
+// EXPECT returns an object that allows the caller to indicate expected use.
 func (m *MockLoader) EXPECT() *MockLoaderMockRecorder {
 	return m.recorder
 }
 
-// StopOnFailure mocks base method
-func (m *MockLoader) StopOnFailure() bool {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "StopOnFailure")
-	ret0, _ := ret[0].(bool)
-	return ret0
-}
-
-// StopOnFailure indicates an expected call of StopOnFailure
-func (mr *MockLoaderMockRecorder) StopOnFailure() *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopOnFailure", reflect.TypeOf((*MockLoader)(nil).StopOnFailure))
-}
-
-// Name mocks base method
-func (m *MockLoader) Name() string {
-	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "Name")
-	ret0, _ := ret[0].(string)
-	return ret0
-}
-
-// Name indicates an expected call of Name
-func (mr *MockLoaderMockRecorder) Name() *gomock.Call {
-	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Name", reflect.TypeOf((*MockLoader)(nil).Name))
-}
-
-// Load mocks base method
+// Load mocks base method.
 func (m *MockLoader) Load(arg0 konfig.Values) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Load", arg0)
@@ -70,13 +43,13 @@ func (m *MockLoader) Load(arg0 konfig.Values) error {
 	return ret0
 }
 
-// Load indicates an expected call of Load
+// Load indicates an expected call of Load.
 func (mr *MockLoaderMockRecorder) Load(arg0 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Load", reflect.TypeOf((*MockLoader)(nil).Load), arg0)
 }
 
-// MaxRetry mocks base method
+// MaxRetry mocks base method.
 func (m *MockLoader) MaxRetry() int {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "MaxRetry")
@@ -84,13 +57,27 @@ func (m *MockLoader) MaxRetry() int {
 	return ret0
 }
 
-// MaxRetry indicates an expected call of MaxRetry
+// MaxRetry indicates an expected call of MaxRetry.
 func (mr *MockLoaderMockRecorder) MaxRetry() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MaxRetry", reflect.TypeOf((*MockLoader)(nil).MaxRetry))
 }
 
-// RetryDelay mocks base method
+// Name mocks base method.
+func (m *MockLoader) Name() string {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Name")
+	ret0, _ := ret[0].(string)
+	return ret0
+}
+
+// Name indicates an expected call of Name.
+func (mr *MockLoaderMockRecorder) Name() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Name", reflect.TypeOf((*MockLoader)(nil).Name))
+}
+
+// RetryDelay mocks base method.
 func (m *MockLoader) RetryDelay() time.Duration {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "RetryDelay")
@@ -98,8 +85,22 @@ func (m *MockLoader) RetryDelay() time.Duration {
 	return ret0
 }
 
-// RetryDelay indicates an expected call of RetryDelay
+// RetryDelay indicates an expected call of RetryDelay.
 func (mr *MockLoaderMockRecorder) RetryDelay() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "RetryDelay", reflect.TypeOf((*MockLoader)(nil).RetryDelay))
+}
+
+// StopOnFailure mocks base method.
+func (m *MockLoader) StopOnFailure() bool {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "StopOnFailure")
+	ret0, _ := ret[0].(bool)
+	return ret0
+}
+
+// StopOnFailure indicates an expected call of StopOnFailure.
+func (mr *MockLoaderMockRecorder) StopOnFailure() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "StopOnFailure", reflect.TypeOf((*MockLoader)(nil).StopOnFailure))
 }

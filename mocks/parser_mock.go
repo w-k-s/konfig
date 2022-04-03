@@ -5,36 +5,37 @@
 package mocks
 
 import (
-	gomock "github.com/golang/mock/gomock"
-	konfig "github.com/lalamove/konfig"
 	io "io"
 	reflect "reflect"
+
+	gomock "github.com/golang/mock/gomock"
+	konfig "github.com/lalamove/konfig"
 )
 
-// MockParser is a mock of Parser interface
+// MockParser is a mock of Parser interface.
 type MockParser struct {
 	ctrl     *gomock.Controller
 	recorder *MockParserMockRecorder
 }
 
-// MockParserMockRecorder is the mock recorder for MockParser
+// MockParserMockRecorder is the mock recorder for MockParser.
 type MockParserMockRecorder struct {
 	mock *MockParser
 }
 
-// NewMockParser creates a new mock instance
+// NewMockParser creates a new mock instance.
 func NewMockParser(ctrl *gomock.Controller) *MockParser {
 	mock := &MockParser{ctrl: ctrl}
 	mock.recorder = &MockParserMockRecorder{mock}
 	return mock
 }
 
-// EXPECT returns an object that allows the caller to indicate expected use
+// EXPECT returns an object that allows the caller to indicate expected use.
 func (m *MockParser) EXPECT() *MockParserMockRecorder {
 	return m.recorder
 }
 
-// Parse mocks base method
+// Parse mocks base method.
 func (m *MockParser) Parse(arg0 io.Reader, arg1 konfig.Values) error {
 	m.ctrl.T.Helper()
 	ret := m.ctrl.Call(m, "Parse", arg0, arg1)
@@ -42,7 +43,7 @@ func (m *MockParser) Parse(arg0 io.Reader, arg1 konfig.Values) error {
 	return ret0
 }
 
-// Parse indicates an expected call of Parse
+// Parse indicates an expected call of Parse.
 func (mr *MockParserMockRecorder) Parse(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Parse", reflect.TypeOf((*MockParser)(nil).Parse), arg0, arg1)
