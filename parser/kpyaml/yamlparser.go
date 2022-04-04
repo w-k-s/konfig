@@ -3,9 +3,9 @@ package kpyaml
 import (
 	"io"
 
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/parser/kpmap"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/parser/kpmap"
 	yaml "gopkg.in/yaml.v2"
 )
 

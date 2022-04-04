@@ -11,7 +11,7 @@ import (
 
 	"github.com/francoispqt/gojay"
 	vault "github.com/hashicorp/vault/api"
-	"github.com/lalamove/konfig/loader/klvault"
+	"github.com/w-k-s/konfig/loader/klvault"
 	"github.com/lalamove/nui/nfs"
 )
 

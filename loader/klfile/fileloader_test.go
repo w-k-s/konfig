@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/mocks"
-	"github.com/lalamove/konfig/parser/kpjson"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/mocks"
+	"github.com/w-k-s/konfig/parser/kpjson"
 	"github.com/lalamove/nui/nfs"
 	"github.com/stretchr/testify/require"
 )

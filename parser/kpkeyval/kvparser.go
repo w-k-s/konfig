@@ -8,8 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
 )
 
 // DefaultSep is the default key value separator

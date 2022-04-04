@@ -1,4 +1,4 @@
-module github.com/lalamove/konfig
+module github.com/w-k-s/konfig
 
 require (
 	github.com/BurntSushi/toml v0.3.1

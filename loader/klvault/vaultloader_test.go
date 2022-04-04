@@ -9,8 +9,8 @@ import (
 
 	gomock "github.com/golang/mock/gomock"
 	vault "github.com/hashicorp/vault/api"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/mocks"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/mocks"
 	"github.com/stretchr/testify/require"
 )
 

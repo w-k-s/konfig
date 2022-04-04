@@ -10,7 +10,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 	vault "github.com/hashicorp/vault/api"
-	"github.com/lalamove/konfig/mocks"
+	"github.com/w-k-s/konfig/mocks"
 	"github.com/lalamove/nui/nfs"
 	"github.com/stretchr/testify/require"
 )

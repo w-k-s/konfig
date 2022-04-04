@@ -3,7 +3,7 @@ package kpmap
 import (
 	"fmt"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 )
 
 func traverseMapIface(m map[interface{}]interface{}, s konfig.Values, p string) {

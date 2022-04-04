@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	"github.com/lalamove/nui/nlogger"
 	"github.com/radovskyb/watcher"
 )

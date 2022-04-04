@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	"github.com/stretchr/testify/require"
 )
 

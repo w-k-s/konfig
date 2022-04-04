@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/coreos/etcd/mvcc/mvccpb"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 	"github.com/lalamove/nui/ncontext"
 	"github.com/lalamove/nui/nstrings"
 	"go.etcd.io/etcd/clientv3"

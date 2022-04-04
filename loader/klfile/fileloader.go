@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/watcher/kwfile"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/watcher/kwfile"
 	"github.com/lalamove/nui/nfs"
 	"github.com/lalamove/nui/nlogger"
 )

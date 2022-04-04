@@ -6,8 +6,8 @@ import (
 	"time"
 
 	gomock "github.com/golang/mock/gomock"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/mocks"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/mocks"
 	"github.com/stretchr/testify/require"
 )
 

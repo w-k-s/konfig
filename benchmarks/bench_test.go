@@ -3,7 +3,7 @@ package benchmarks
 import (
 	"testing"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	config "github.com/micro/go-micro/config"
 	"github.com/micro/go-micro/config/source/memory"
 	"github.com/spf13/viper"

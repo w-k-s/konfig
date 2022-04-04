@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	"github.com/lalamove/nui/nlogger"
 )
 

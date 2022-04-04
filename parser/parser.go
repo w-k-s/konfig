@@ -3,7 +3,7 @@ package parser
 import (
 	"io"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 )
 
 var _ Parser = (Func)(nil)

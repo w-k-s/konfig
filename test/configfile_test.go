@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/loader/klfile"
-	"github.com/lalamove/konfig/parser/kpyaml"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/loader/klfile"
+	"github.com/w-k-s/konfig/parser/kpyaml"
 	"github.com/stretchr/testify/require"
 )
 

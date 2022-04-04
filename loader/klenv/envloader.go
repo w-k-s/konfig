@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	"github.com/lalamove/nui/nstrings"
 )
 

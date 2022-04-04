@@ -11,9 +11,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 )
 
 var (

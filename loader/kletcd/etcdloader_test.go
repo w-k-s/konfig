@@ -9,10 +9,10 @@ import (
 
 	"github.com/coreos/etcd/mvcc/mvccpb"
 	"github.com/golang/mock/gomock"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/mocks"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/mocks"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 	"github.com/stretchr/testify/require"
 	"go.etcd.io/etcd/clientv3"
 )

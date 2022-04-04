@@ -9,7 +9,7 @@ import (
 	time "time"
 
 	gomock "github.com/golang/mock/gomock"
-	konfig "github.com/lalamove/konfig"
+	konfig "github.com/w-k-s/konfig"
 )
 
 // MockLoader is a mock of Loader interface.

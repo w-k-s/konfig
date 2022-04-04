@@ -11,8 +11,8 @@ import (
 	"time"
 
 	vault "github.com/hashicorp/vault/api"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 	"github.com/lalamove/nui/nlogger"
 	"github.com/lalamove/nui/nstrings"
 )

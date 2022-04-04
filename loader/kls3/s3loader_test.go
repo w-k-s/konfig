@@ -8,9 +8,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/golang/mock/gomock"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/mocks"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/mocks"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 	"github.com/stretchr/testify/require"
 )
 

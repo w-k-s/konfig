@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/parser/kpmap"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/parser/kpmap"
 )
 
 // Parser parses the given json io.Reader and adds values in dot.path notation into the konfig.Store

@@ -8,7 +8,7 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/lalamove/konfig"
+	"github.com/w-k-s/konfig"
 	"github.com/stretchr/testify/require"
 )
 

@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/hashicorp/consul/api"
-	"github.com/lalamove/konfig"
-	"github.com/lalamove/konfig/parser"
-	"github.com/lalamove/konfig/watcher/kwpoll"
+	"github.com/w-k-s/konfig"
+	"github.com/w-k-s/konfig/parser"
+	"github.com/w-k-s/konfig/watcher/kwpoll"
 	"github.com/lalamove/nui/nlogger"
 	"github.com/lalamove/nui/nstrings"
 )
